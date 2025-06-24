@@ -600,17 +600,35 @@ footer {
     line-height: 1.6;
 }
 
-@media (max-width: 768px) {
-    .contact-card {
-        padding: 30px 20px;
+/* Media query for short viewports */
+@media (max-height: 650px) {
+    .hero {
+        padding-top: 80px; /* Push content below fixed header */
+        min-height: auto; /* Allow section to shrink vertically */
+        padding-bottom: 40px; /* Add some space at the bottom */
     }
-    
-    .contact-title {
+
+    .logo-img {
+        width: 150px;
+        height: 150px;
+        margin-bottom: 15px;
+    }
+
+    .hero-text-container {
+        margin-top: 10px;
+    }
+
+    .hero h2 {
         font-size: 36px;
     }
-    
-    .contact-value {
-        font-size: 20px;
+
+    .hero p {
+        font-size: 16px;
+        margin-bottom: 20px;
+    }
+
+    .cta-buttons {
+        margin-top: 20px;
     }
 }
 
